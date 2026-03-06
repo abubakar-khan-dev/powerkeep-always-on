@@ -9,10 +9,10 @@ const ContactSection = () => (
         <h2 className="font-display text-3xl sm:text-4xl font-bold">Get in Touch</h2>
       </motion.div>
 
-      <div className="grid sm:grid-cols-3 gap-6">
+      <div className="grid sm:grid-cols-3 gap-1">
         {[
-          { icon: Phone, label: "Phone / WhatsApp", value: "+92 300 1234567" },
-          { icon: Mail, label: "Email", value: "sales@powerkeep.pk" },
+          { icon: Phone, label: "Phone / WhatsApp", value: "+92 3424100307" },
+          { icon: Mail, label: "Email", value: "abubakkarinam01@gmail.com" },
           { icon: MapPin, label: "Location", value: "Lahore, Pakistan" },
         ].map((c, i) => (
           <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}

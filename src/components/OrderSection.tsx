@@ -17,7 +17,7 @@ const OrderSection = () => {
       return;
     }
     const msg = `New Order:%0A${form.name}%0APhone: ${form.phone}%0ACity: ${form.city}%0AAddress: ${form.address}%0AQty: ${form.qty}`;
-    window.open(`https://wa.me/923001234567?text=${msg}`, "_blank");
+    window.open(`https://wa.me/923424100307?text=${msg}`, "_blank");
     toast.success("Redirecting to WhatsApp...");
   };
 
