@@ -29,7 +29,7 @@ const Navbar = () => {
               {item.label}
             </a>
           ))}
-          <Button asChild size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 btn-glow font-semibold">
+          <Button asChild size="sm" className="btn-glow font-semibold">
             <a href="#order">Order on WhatsApp</a>
           </Button>
         </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
-            <Button asChild size="sm" className="bg-primary text-primary-foreground w-full mt-2">
+            <Button asChild size="sm" className="w-full mt-2">
               <a href="#order" onClick={() => setMobileOpen(false)}>Order on WhatsApp</a>
             </Button>
           </div>
