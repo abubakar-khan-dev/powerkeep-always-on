@@ -1,9 +1,9 @@
-import { Truck, CreditCard, Users } from "lucide-react";
+import { Truck, CreditCard, ShieldCheck } from "lucide-react";
 
 const badges = [
   { icon: Truck, text: "Fast Delivery Across Pakistan" },
   { icon: CreditCard, text: "Cash on Delivery Available" },
-  { icon: Users, text: "Thousands of Happy Customers" },
+  { icon: ShieldCheck, text: "Quality Tested Products" },
 ];
 
 const TrustBar = () => (

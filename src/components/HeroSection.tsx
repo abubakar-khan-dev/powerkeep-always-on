@@ -12,20 +12,20 @@ const HeroSection = () => (
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.25rem] font-bold leading-tight mb-6 text-foreground">
             Never Let Power Outages Stop Your{" "}
-            <span className="text-gradient-yellow">Internet or Entertainment</span>
+            <span className="text-gradient-blue">Internet or Entertainment</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-lg mb-6">
-            Discover smart gadgets that keep your internet running and turn any wall into a cinema.
+            Reliable backup power for your router and portable projection for movies anywhere.
           </p>
 
           <ul className="space-y-2 mb-8 text-muted-foreground">
             <li className="flex items-center gap-2"><span className="text-primary font-bold">•</span> 8–10 hours router backup</li>
-            <li className="flex items-center gap-2"><span className="text-primary font-bold">•</span> Portable smart projector</li>
-            <li className="flex items-center gap-2"><span className="text-primary font-bold">•</span> Perfect for homes in Pakistan</li>
+            <li className="flex items-center gap-2"><span className="text-primary font-bold">•</span> CCTV cameras continue recording during power outages</li>
+            <li className="flex items-center gap-2"><span className="text-primary font-bold">•</span> Portable projector for movies and gaming</li>
           </ul>
 
           <div className="flex flex-wrap gap-4">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 btn-glow font-semibold text-base px-8">
+            <Button asChild size="lg" className="btn-glow font-semibold text-base px-8">
               <a href="#order">Order on WhatsApp</a>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-border text-foreground hover:bg-secondary text-base px-8">
