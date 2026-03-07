@@ -1,29 +1,28 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import ProblemSection from "@/components/ProblemSection";
-import FeaturesSection from "@/components/FeaturesSection";
+import TrustBar from "@/components/TrustBar";
+import ProductsSection from "@/components/ProductsSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
-import SpecsSection from "@/components/SpecsSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import FAQSection from "@/components/FAQSection";
 import OrderSection from "@/components/OrderSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => (
   <>
     <Navbar />
     <HeroSection />
-    <ProblemSection />
-    <FeaturesSection />
-    <OrderSection />
+    <TrustBar />
+    <ProductsSection />
     <HowItWorksSection />
-    <SpecsSection />
     <ReviewsSection />
     <FAQSection />
-    
+    <OrderSection />
     <ContactSection />
     <Footer />
+    <FloatingWhatsApp />
   </>
 );
 
