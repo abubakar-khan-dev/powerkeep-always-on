@@ -12,6 +12,8 @@ import FinalCTA from "@/components/FinalCTA";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import RecentPurchase from "@/components/RecentPurchase";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 const Index = () => (
   <>
@@ -29,6 +31,8 @@ const Index = () => (
     <ContactSection />
     <Footer />
     <FloatingWhatsApp />
+    <RecentPurchase />
+    <StickyMobileCTA />
   </>
 );
 
