@@ -32,13 +32,11 @@ const ProblemSection = () => (
         ))}
       </div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-        className="text-center"
-      >
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
         <ArrowDown className="h-8 w-8 text-primary mx-auto mb-4 animate-bounce" />
         <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 max-w-xl mx-auto">
           <p className="text-lg font-display font-bold text-foreground mb-1">✅ The Solution</p>
-          <p className="text-muted-foreground">Rawaan Store's smart gadgets keep your devices powered and your entertainment running — even when electricity goes out.</p>
+          <p className="text-muted-foreground">The WGP Mini UPS keeps your router and CCTV cameras powered — even when electricity goes out.</p>
         </div>
       </motion.div>
     </div>
