@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Star, ShieldCheck, Truck, Users } from "lucide-react";
-import upsPackage from "@/assets/ups-package.jpg";
+import upsHero from "@/assets/ups-hero-clean.jpg";
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => (
@@ -66,10 +66,10 @@ const HeroSection = () => (
           <div className="relative group">
             <div className="absolute inset-0 bg-primary/10 rounded-3xl blur-2xl scale-90 group-hover:scale-100 transition-transform duration-500" />
             <img
-              src={upsPackage}
-              alt="Mini DC UPS Package with accessories"
+              src={upsHero}
+              alt="Mini DC UPS — Ports and Connections"
               loading="eager"
-              className="relative w-72 sm:w-80 lg:w-96 rounded-2xl shadow-[0_20px_60px_-15px_hsl(var(--primary)/0.25)] group-hover:scale-[1.03] transition-transform duration-500"
+              className="relative w-72 sm:w-80 lg:w-[420px] rounded-2xl shadow-[0_20px_60px_-15px_hsl(var(--primary)/0.25)] group-hover:scale-[1.03] transition-transform duration-500 bg-card p-4"
             />
           </div>
         </motion.div>
