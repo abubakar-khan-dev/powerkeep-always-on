@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Star, ShieldCheck, Truck, Users } from "lucide-react";
-import upsHero from "@/assets/ups-ports.jpg";
+import upsHero from "@/assets/ups-hero-clean.jpg";
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => (
