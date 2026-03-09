@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Star, ShieldCheck, Truck, Users } from "lucide-react";
-import upsImg from "@/assets/wgp-mini-ups.jpg";
+import upsPackage from "@/assets/ups-package.jpg";
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => (
@@ -53,14 +53,25 @@ const HeroSection = () => (
           </div>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.2 }}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
           className="flex items-center justify-center relative"
         >
           <div className="absolute -top-2 right-4 z-10 bg-destructive text-destructive-foreground rounded-full w-16 h-16 flex flex-col items-center justify-center font-display font-bold text-xs shadow-lg">
             <span className="text-lg leading-none">20%</span>
             <span>OFF</span>
           </div>
-          <img src={upsImg} alt="WGP Mini UPS" className="w-52 sm:w-64 rounded-2xl shadow-product animate-float" />
+          <div className="relative group">
+            <div className="absolute inset-0 bg-primary/10 rounded-3xl blur-2xl scale-90 group-hover:scale-100 transition-transform duration-500" />
+            <img
+              src={upsPackage}
+              alt="Mini DC UPS Package with accessories"
+              loading="eager"
+              className="relative w-72 sm:w-80 lg:w-96 rounded-2xl shadow-[0_20px_60px_-15px_hsl(var(--primary)/0.25)] group-hover:scale-[1.03] transition-transform duration-500"
+            />
+          </div>
         </motion.div>
       </div>
     </div>
