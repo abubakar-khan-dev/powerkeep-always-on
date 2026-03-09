@@ -4,6 +4,8 @@ import TrustBar from "@/components/TrustBar";
 import ProblemSection from "@/components/ProblemSection";
 import ProductsSection from "@/components/ProductsSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
+import ProductGallery from "@/components/ProductGallery";
+import DemoVideoSection from "@/components/DemoVideoSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import FAQSection from "@/components/FAQSection";
