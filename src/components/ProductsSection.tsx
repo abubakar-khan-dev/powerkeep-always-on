@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Check, Play, Flame, TrendingUp } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
-import upsImg from "@/assets/wgp-mini-ups.jpg";
+import upsImg from "@/assets/ups-package.jpg";
 
 const product = {
   name: "WGP Mini UPS",
