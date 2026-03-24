@@ -20,7 +20,7 @@ const product = {
     "Smart battery protection",
   ],
   whatsapp: "I want to order WGP Mini UPS – PKR 5800",
-  videoId: "SA5AlnLmyNuvl5GX",
+  videoId: "1lmecRXkgZk",
   stock: 12,
   sold: 1840,
   badge: "Best Seller",
