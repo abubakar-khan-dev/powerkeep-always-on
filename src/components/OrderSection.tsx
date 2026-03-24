@@ -62,7 +62,7 @@ const OrderSection = () => {
               <span className="text-sm font-semibold text-foreground">WGP Mini UPS</span>
               <div className="flex items-baseline gap-2">
                 <span className="price-slash text-xs">PKR 7,500</span>
-                <span className="text-primary font-bold">PKR 5,600</span>
+                <span className="text-primary font-bold">PKR 5,800</span>
               </div>
             </div>
             <div className="flex items-center gap-3">
