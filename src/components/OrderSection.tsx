@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import { ShieldCheck, Truck, Gift, MessageCircle } from "lucide-react";
 import CountdownTimer from "./CountdownTimer";
 
-const PRICE = 5600;
+const PRICE = 5800;
 
 const OrderSection = () => {
   const [form, setForm] = useState({
