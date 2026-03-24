@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
 
-const YOUTUBE_VIDEO_ID = "SA5AlnLmyNuvl5GX";
+const YOUTUBE_VIDEO_ID = "1lmecRXkgZk";
 
 const DemoVideoSection = () => {
   const [playing, setPlaying] = useState(false);
