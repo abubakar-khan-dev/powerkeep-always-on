@@ -1,15 +1,11 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
 
+const YOUTUBE_VIDEO_ID = "SA5AlnLmyNuvl5GX";
+
 const DemoVideoSection = () => {
   const [playing, setPlaying] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  const handlePlay = () => {
-    setPlaying(true);
-    videoRef.current?.play();
-  };
 
   return (
     <section className="py-20">
@@ -25,22 +21,30 @@ const DemoVideoSection = () => {
           viewport={{ once: true }}
           className="relative rounded-2xl overflow-hidden border border-border shadow-lg bg-card"
         >
-          <video
-            ref={videoRef}
-            src="/videos/ups-demo.mp4"
-            controls={playing}
-            playsInline
-            preload="metadata"
-            className="w-full aspect-video object-cover"
-            onEnded={() => setPlaying(false)}
-          />
-          {!playing && (
+          {playing ? (
+            <div className="relative pt-[56.25%]">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1`}
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                title="Product Demo Video"
+              />
+            </div>
+          ) : (
             <button
-              onClick={handlePlay}
-              className="absolute inset-0 flex items-center justify-center bg-foreground/20 hover:bg-foreground/30 transition-colors group"
+              onClick={() => setPlaying(true)}
+              className="relative w-full group"
             >
-              <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
-                <Play className="h-8 w-8 text-primary-foreground ml-1" />
+              <img
+                src={`https://img.youtube.com/vi/${YOUTUBE_VIDEO_ID}/hqdefault.jpg`}
+                alt="Demo video thumbnail"
+                className="w-full aspect-video object-cover"
+              />
+              <div className="absolute inset-0 flex items-center justify-center bg-foreground/20 hover:bg-foreground/30 transition-colors">
+                <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                  <Play className="h-8 w-8 text-primary-foreground ml-1" />
+                </div>
               </div>
             </button>
           )}
