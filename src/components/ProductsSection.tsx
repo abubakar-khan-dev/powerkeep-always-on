@@ -8,7 +8,7 @@ import upsImg from "@/assets/ups-package.jpg";
 const product = {
   name: "WGP Mini UPS",
   originalPrice: "PKR 7,000",
-  price: "PKR 5,600",
+  price: "PKR 5,800",
   discount: "20% OFF",
   image: upsImg,
   desc: "Reliable power backup for routers and CCTV cameras during load shedding.",
